@@ -1,0 +1,5 @@
+name = FarmOffers API
+description = Provide an API for farmoffers.com mobile apps
+package = farmoffers
+core = 7.x
+php = 5.x

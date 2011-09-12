@@ -1,0 +1,30 @@
+
+name = Plow
+description = The first theme for FarmOffers.com
+package = Core
+version = VERSION
+core = 7.x
+
+stylesheets[all][] = css/style.css
+
+regions[header] = Header
+regions[content] = Content
+regions[footer] = Footer
+
+scripts[] = js/phonegap.js
+scripts[] = js/device.js
+scripts[] = js/geo.js
+scripts[] = js/jquery.ui.map
+scripts[] = js/phonegap.js
+scripts[] = js/photo.js
+scripts[] = js/xui.js
+
+
+settings[shortcut_module_link] = 0
+
+
+; Information added by drupal.org packaging script on 2011-08-31
+version = "7.8"
+project = "drupal"
+datestamp = "1314817616"
+

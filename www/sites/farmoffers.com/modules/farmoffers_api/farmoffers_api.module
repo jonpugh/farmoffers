@@ -1,0 +1,21 @@
+<?php
+
+
+function farmoffers_api_menu() {
+  $items['api'] = array(
+    'page callback' => 'farmoffers_api_dispatch',
+    'page arguments' => array(1, 2, 3),
+    'access callback' => TRUE,
+  );
+  return $items;
+}
+
+function farmoffers_api_dispatch($context, $op, $arg){
+  $function = "farmoffers_api_" . $context .'_'. $op;
+  print $function . $arg;
+  if (function_exists($function)){
+    call_user_func($function, $arg);
+  }
+}
+
+
